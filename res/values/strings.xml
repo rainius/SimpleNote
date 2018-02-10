@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SimpleNote</string>
+    <string name="all_notes">全部笔记</string>
+    <string name="new_note">新笔记</string>
+    <string name="read_note">读笔记</string>
+    <string name="modify_note">修改</string>
+    <string name="finish_note">完成</string>
+    <string name="note_saved">笔记已保存</string>
+    
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
