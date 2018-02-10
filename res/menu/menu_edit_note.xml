@@ -3,10 +3,9 @@
     tools:context="com.example.simplenote.MainActivity" >
     
     <item
-        android:id="@+id/action_new_note"
+        android:id="@+id/action_finish_note"
         android:orderInCategory="100"
         android:showAsAction="always"
-        android:icon="@drawable/ic_new_note"
-        android:title="@string/new_note"/>
+        android:title="@string/finish_note"/>
 
 </menu>

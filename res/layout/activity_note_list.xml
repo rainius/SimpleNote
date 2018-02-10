@@ -7,17 +7,11 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.simplenote.NoteListActivity" >
-
-    <Button 
-        android:id="@+id/tmp_new"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/new_note"/>
+   
     <Button 
         android:id="@+id/tmp_read"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/tmp_new"
         android:text="@string/read_note"/>
 
 </RelativeLayout>

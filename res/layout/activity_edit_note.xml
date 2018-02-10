@@ -8,11 +8,5 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.simplenote.NoteListActivity" >
 
-    <Button 
-        android:id="@+id/tmp_finish"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onFinishNote"
-        android:text="@string/finish_note"/>
 
 </RelativeLayout>

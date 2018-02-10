@@ -12,7 +12,6 @@ import android.widget.Button;
 
 public class NoteListActivity extends Activity implements OnClickListener {
 	
-	private Button mTmpNewButton;
 	private Button mTmpReadButton;
 
     @Override
@@ -20,8 +19,6 @@ public class NoteListActivity extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_note_list);
         
-        mTmpNewButton = (Button) findViewById(R.id.tmp_new);
-        mTmpNewButton.setOnClickListener(this);
         mTmpReadButton = (Button) findViewById(R.id.tmp_read);
         mTmpReadButton.setOnClickListener(this);
     }
@@ -40,7 +37,8 @@ public class NoteListActivity extends Activity implements OnClickListener {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_new_note) {
+        	EditNoteActivity.actionStartEditNoteActivity(this);
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -50,9 +48,6 @@ public class NoteListActivity extends Activity implements OnClickListener {
 	@Override
 	public void onClick(View view) {
 		switch (view.getId()) {
-		case R.id.tmp_new:
-			EditNoteActivity.actionStartEditNoteActivity(this);
-			break;
 		case R.id.tmp_read:
 			startActivity(ReadNoteActivity.class);
 			break;
